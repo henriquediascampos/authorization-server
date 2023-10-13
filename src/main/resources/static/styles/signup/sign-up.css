@@ -1,0 +1,50 @@
+@import url('../styles.css');
+
+
+.form-login {
+    height: 63vh;
+    width: 40vh;
+    box-shadow: 1px 1px 14px 0px #3c3c3cab;
+    padding: 16px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.header {
+    color: #959595;
+    height: 15%;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.content {
+    height: 60%;
+    justify-content: center;
+}
+
+.link-container {
+  margin-top: 35px;
+}
+
+.link {
+    color: #959595;
+    font-weight: 400;
+}
+
+.link:hover {
+  color: #646464;
+}
+
+.link:active {
+  color: #262626;
+  transform: scale(1.009);
+}
+
+
+.footer {
+    height: 15%;
+    font-weight: 500;
+    justify-content: center;
+}

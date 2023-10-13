@@ -1,0 +1,49 @@
+databaseChangeLog:
+    - property:
+          name: tables_exists
+          value: select count(*) FROM information_schema.tables where UPPER(table_name)
+          dbms: postgresql
+    - property:
+          name: generate_uuid
+          value: (SELECT md5(random()::text || clock_timestamp()::text)::uuid)
+          dbms: postgresql
+    - property:
+          name: zonedDateTime_now
+          value: current_timestamp
+          dbms: postgresql
+    - property:
+          name: created_by_liquibase
+          value: "'CREATED BY LIQUIBASE'"
+          dbms: postgresql
+    - property:
+          name: zonedDateTime
+          value: timestamptz
+          dbms: postgresql
+    - property:
+          name: varchar
+          value: varchar
+          dbms: postgresql
+    - property:
+          name: integer
+          value: int4
+          dbms: postgresql   
+    - property:
+          name: bigint
+          value: bigint
+          dbms: postgresql                   
+    - property:
+          name: boolean
+          value: bool
+          dbms: postgresql
+    - property:
+          name: "false"
+          value: "false"
+          dbms: postgresql
+    - property:
+          name: "true"
+          value: "true"
+          dbms: postgresql          
+    - property:
+          name: uuid
+          value: uuid
+          dbms: postgresql

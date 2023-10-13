@@ -1,0 +1,26 @@
+:root {
+    --primary: #328993;
+    --accent: #32936c;
+    --warn: 328993;
+    --error: 328993;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.accent {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.warn {
+    background-color: var(--warn);
+    color: #fff;
+}
+
+.error {
+    background-color: var(--error);
+    color: #fff;
+}

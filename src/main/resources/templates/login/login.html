@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Login</title>
+        <link th:href="@{styles/login/login.css}" rel="stylesheet" />
+        <link rel="shortcut icon" th:href="@{images/favicon.ico}" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body class="body-template">
+
+        <form class="form-login container column" name='f' action="login" method='POST'>
+            <div class="container header">LOGIN</div>
+            <div class="content">
+                <div class="container column">
+                    <div class="form-field">
+                        <label class="label-form">Email</label>
+                        <input
+                            class="input-form-field"
+                            type="text"
+                            id="email"
+                            name='username'
+                            placeholder="Email"
+                            value="admin@email.com"
+                        />
+                    </div>
+                    <div class="form-field">
+                        <label class="label-form">Password</label>
+                        <input
+                            class="input-form-field"
+                            type="password"
+                            id="password"
+                            name='password'
+                            placeholder="Password"
+                            value="sucesso"
+                            #patos
+                        />
+                        <button class="button-icon visibility-off">
+                            <i class="basic-icon">visibility_off</i>
+                        </button>
+                        <button class="button-icon visibility-on hidden">
+                            <i class="basic-icon">visibility</i>
+                        </button>
+                    </div>
+                    <div class="container center">
+                        <input name="submit" type="submit" value="Entrar" class="button primary full-w" />
+                    </div>
+                    <div class="container column link-container">
+                        <a class="link" href="/forgot-password">Esqueci minha senha</a>
+                        <a class="link" href="/sign-up">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer"></div>
+        </form>
+    </body>
+    <script th:src="@{js/login/login.js}"></script>
+    <script th:src="@{js/scripts.js}" type="module"></script>
+</html>

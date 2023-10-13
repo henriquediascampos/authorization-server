@@ -1,0 +1,81 @@
+:root {
+    --font-default: Roboto, Helvetica Neue, sans-serif;
+    --font-label-from: 0.75rem;
+    --height-input-from: 60px;
+    --color-default: #9b9b9b;
+    --color-input: #2b2b2b64;
+    --color-placeholder: #9b9b9bbf;
+}
+
+/* FORM */
+.form-field {
+    color: var(--color-default);
+    position: relative;
+    display: flex;
+    height: var(--height-input-from);
+    border: 1px solid var(--color-placeholder);
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 16px !important;
+    align-items: center;
+}
+
+.form-field:hover,
+.form-field:focus-within {
+    border: 1px solid var(--color-default);
+}
+
+/* IMPUT */
+.input-form-field {
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    border-top: 13.5px solid transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: var(--font-default);
+    letter-spacing: normal;
+    outline: none;
+    padding-left: 4px;
+}
+
+.input-form-field:-webkit-autofill,
+.input-form-field:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.input-form-field::placeholder {
+    color: var(--color-placeholder);
+    font-weight: 400;
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.input-form-field:focus::placeholder {
+    visibility: visible;
+}
+
+/* LABEL */
+.form-field > .label-form {
+    transform-origin: left;
+    margin: 0 !important;
+    padding: 0;
+    padding-left: 4px;
+    position: absolute;
+    font-size: 1rem;
+    text-transform: capitalize;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    left: 4px;
+    transition: top 350ms, transform 350ms;
+    font-family: var(--font-default);
+    width: 100%;
+}
+
+.form-field:focus-within > .label-form,
+.form-field.not-empty > .label-form {
+    transform: translateY(-1.6em) scale(0.75);
+}

@@ -1,0 +1,9 @@
+databaseChangeLog:
+    - include:
+          file: liquibase/properties/properties.postgresql.yml
+    - include:
+          file: liquibase/properties/properties.h2.yml   
+    - include:
+          file: liquibase/properties/properties.oracle.yml                    
+    - include:
+          file: liquibase/versions/1.0/changelog.1.0.yaml

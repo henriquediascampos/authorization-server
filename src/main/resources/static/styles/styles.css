@@ -1,0 +1,27 @@
+@import url('stylization/reset.css');
+@import url('stylization/flex.css');
+@import url('components/components.css');
+@import url('stylization/color-palette.css');
+
+.hidden {
+    display: none;
+}
+
+.body-template {
+    flex: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    place-content: center center;
+    background-image: linear-gradient(
+        to right,
+        var(--primary) 0%,
+        #00cdac 51%,
+        var(--primary) 100%
+    );
+    align-items: center;
+}
+
+.contaibody-template:hover {
+    background-position: right center;
+    text-decoration: none;
+}
